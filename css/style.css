@@ -254,3 +254,48 @@ footer h5 {
   align-self: flex-end;
   justify-content: right;
 }
+
+/* Sektion med grå baggrund og mediatekst -----------------------------------------------------------------------------------------*/
+.graabgmedia {
+  display: flex;
+  width: 100%;
+  padding: 50px 15px;
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
+  color: var(--hvid);
+  background-color: var(--prim);
+}
+
+.graabgmedia__billede {
+  width: 100%;
+  height: auto;
+}
+.graabgmedia__billede img {
+  width: 100%;
+  height: auto;
+}
+
+.graabgmedia a {
+  background-color: black;
+}
+
+/* om os hero sektion -----------------------------------------------------------------------------------------------------------*/
+.mediatext__hero {
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.mediatext__hero img {
+  width: 100%;
+  height: auto;
+}
+
+.video {
+  width: 100%;
+  height: 326px;
+}
