@@ -8,7 +8,8 @@
 
   /* spacing */
   --mobile: 15px;
-  --desktop: 80px;
+  --ldesktop: 150px;
+  --sdesktop: 80px;
 }
 
 * {
@@ -55,6 +56,11 @@ h5 {
   text-decoration: none;
   color: var(--hvid);
   width: fit-content;
+}
+
+.video {
+  width: 100%;
+  height: 326px;
 }
 
 /* Header --------------------------------------------------------------------------------------- */
@@ -160,6 +166,7 @@ header {
   background-image: url("../images/hero-billede.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Kampagnevideo sektion ---------------------------------------------------------------------------------*/
@@ -313,15 +320,18 @@ footer h5 {
   height: auto;
 }
 
-.video {
-  width: 100%;
-  height: 326px;
-}
-
-@media screen and (min-width: 1024px) {
+/* Til små desktop skærme */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   * {
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .button__cta {
+    padding: 8px 35px;
+  }
+
+  .video {
+    height: 500px;
   }
 
   .nav__menudesk--liste {
@@ -329,7 +339,7 @@ footer h5 {
   }
 
   header {
-    padding: 15px var(--desktop);
+    padding: 15px var(--sdesktop);
   }
 
   .header__burgermenu {
@@ -339,5 +349,115 @@ footer h5 {
   .hero {
     padding: 200px;
     gap: 20px;
+    height: 700px;
+  }
+  .misogvis {
+    flex-direction: row;
+    padding: 50px 160px;
+    gap: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .kampagnevideo {
+    padding: 50px var(--sdesktop);
+    gap: 25px;
+  }
+
+  .mediatext {
+    flex-direction: row;
+    padding: 50px var(--sdesktop);
+    gap: 80px;
+    align-items: center;
+  }
+  .mediatext__textbox {
+    gap: 25px;
+    width: 100%;
+  }
+  .mediatext__titel--mobil {
+    display: none;
+  }
+  .mediatext__titel--desktop {
+    display: block;
+  }
+
+  footer {
+    padding: 50px var(--sdesktop);
+    height: 356px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #footer__cta {
+    align-self: flex-start;
+  }
+}
+
+/* Til medium desktop skærme */
+@media screen and (min-width: 1025px) and (max-width: 1599px) {
+  * {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .button__cta {
+    padding: 8px 35px;
+  }
+
+  .video {
+    height: 600px;
+  }
+
+  .nav__menudesk--liste {
+    display: flex;
+  }
+
+  header {
+    padding: 15px var(--ldesktop);
+  }
+
+  .header__burgermenu {
+    display: none;
+  }
+
+  .hero {
+    padding: 200px;
+    gap: 20px;
+    height: 700px;
+  }
+  .misogvis {
+    flex-direction: row;
+    padding: 50px 160px;
+    gap: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .kampagnevideo {
+    padding: 50px var(--ldesktop);
+    gap: 25px;
+  }
+
+  .mediatext {
+    flex-direction: row;
+    padding: 50px var(--ldesktop);
+    gap: 80px;
+    align-items: center;
+  }
+  .mediatext__textbox {
+    gap: 25px;
+    width: 100%;
+  }
+  .mediatext__titel--mobil {
+    display: none;
+  }
+  .mediatext__titel--desktop {
+    display: block;
+  }
+
+  footer {
+    padding: 50px var(--ldesktop);
+    height: 356px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #footer__cta {
+    align-self: flex-start;
   }
 }
