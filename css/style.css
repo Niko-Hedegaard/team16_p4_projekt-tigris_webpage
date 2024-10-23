@@ -74,6 +74,8 @@ header {
   align-items: center;
   background: #d1d1d1;
   gap: 14px;
+  position: fixed;
+  top: 0;
 }
 
 .header__logo {
@@ -115,6 +117,10 @@ header {
   font-size: 1rem;
   text-decoration: none;
   color: var(--hvid);
+}
+
+#hero__efterheader {
+  margin-top: 140px;
 }
 
 /* Hero sektion ---------------------------------------------------------------------------------------*/
@@ -238,6 +244,7 @@ header {
 footer {
   display: flex;
   width: 100%;
+  height: 256px;
   padding: var(--mobile);
   align-items: flex-start;
   align-content: flex-start;
@@ -309,6 +316,13 @@ footer h5 {
   height: auto;
 }
 
+.graabgmedia__textbox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
 .graabgmedia a {
   background-color: black;
 }
@@ -334,6 +348,11 @@ footer h5 {
     font-size: 18px;
     line-height: 1.5;
   }
+
+  #hero__efterheader {
+    margin-top: 73px;
+  }
+
   .button__cta {
     padding: 8px 35px;
   }
@@ -390,6 +409,14 @@ footer h5 {
   .mediatext__vertical {
     padding: 50px var(--sdesktop);
   }
+  .graabgmedia {
+    flex-direction: row;
+    padding: 50px var(--sdesktop);
+    gap: 50px;
+  }
+  .graabgmedia__textbox {
+    gap: 25px;
+  }
 
   footer {
     padding: 50px var(--sdesktop);
@@ -408,6 +435,11 @@ footer h5 {
     font-size: 18px;
     line-height: 1.5;
   }
+
+  #hero__efterheader {
+    margin-top: 73px;
+  }
+
   .button__cta {
     padding: 8px 35px;
   }
@@ -463,6 +495,101 @@ footer h5 {
   }
   .mediatext__vertical {
     padding: 50px var(--ldesktop);
+  }
+  .graabgmedia {
+    flex-direction: row;
+    padding: 50px var(--ldesktop);
+    gap: 50px;
+  }
+  .graabgmedia__textbox {
+    gap: 25px;
+  }
+
+  footer {
+    padding: 50px var(--ldesktop);
+    height: 356px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #footer__cta {
+    align-self: flex-start;
+  }
+}
+
+/* Til store desktop skærme */
+@media screen and (min-width: 1600px) {
+  * {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  #hero__efterheader {
+    margin-top: 73px;
+  }
+
+  .button__cta {
+    padding: 8px 35px;
+  }
+
+  .video {
+    height: 600px;
+  }
+
+  .nav__menudesk--liste {
+    display: flex;
+  }
+
+  header {
+    padding: 15px var(--ldesktop);
+  }
+
+  .header__burgermenu {
+    display: none;
+  }
+
+  .hero {
+    padding: 200px;
+    gap: 20px;
+    height: 700px;
+  }
+  .misogvis {
+    flex-direction: row;
+    padding: 50px 160px;
+    gap: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .kampagnevideo {
+    padding: 50px var(--ldesktop);
+    gap: 25px;
+  }
+
+  .mediatext {
+    flex-direction: row;
+    padding: 50px var(--ldesktop);
+    gap: 80px;
+    align-items: center;
+  }
+  .mediatext__textbox {
+    gap: 25px;
+    width: 100%;
+  }
+  .mediatext__titel--mobil {
+    display: none;
+  }
+  .mediatext__titel--desktop {
+    display: block;
+  }
+  .mediatext__vertical {
+    padding: 50px var(--ldesktop);
+  }
+  .graabgmedia {
+    flex-direction: row;
+    padding: 50px var(--ldesktop);
+    gap: 50px;
+  }
+  .graabgmedia__textbox {
+    gap: 25px;
   }
 
   footer {
