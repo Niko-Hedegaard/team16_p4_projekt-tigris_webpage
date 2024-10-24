@@ -218,15 +218,28 @@ header {
 }
 
 /* Kampagnevideo sektion ---------------------------------------------------------------------------------*/
-.kampagnevideo {
+.kampagnevideo__graabg {
   display: flex;
   width: 100%;
-  padding: 25px var(--mobile);
+  padding: 45px var(--mobile);
   flex-direction: column;
   align-items: center;
   gap: 21px;
   background-color: var(--sort);
   color: var(--hvid);
+}
+
+.kampagnevideo__graabg h2 {
+  text-align: center;
+}
+
+.kampagnevideo {
+  display: flex;
+  width: 100%;
+  padding: 45px var(--mobile);
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
 }
 
 .kampagnevideo h2 {
@@ -299,12 +312,12 @@ footer {
 }
 
 footer img {
-  width: 60;
+  width: 60px;
   height: 60px;
 }
 
 footer h5 {
-  color: #ffffff;
+  color: var(--hvid);
 }
 
 .footer__menu--ul {
@@ -318,7 +331,13 @@ footer h5 {
 .footer__menu--ul li a {
   text-decoration: none;
   font-size: 0.833rem;
-  color: #ffffff;
+  color: var(--hvid);
+}
+
+.footer__some {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .footer__some--box {
@@ -326,12 +345,18 @@ footer h5 {
   gap: 10px;
 }
 
-.footer__some--ikon {
+.footer__some--box a {
   display: block;
-  width: 20px;
-  height: 20px;
-  background-color: #d1d1d1;
+  width: 30px;
+  height: 30px;
+  color: var(--hvid);
   border-radius: 5px;
+  font-size: 1rem;
+}
+
+.footer__some--box a:hover {
+  cursor: pointer;
+  color: var(--prim);
 }
 
 #footer__cta {
@@ -348,7 +373,7 @@ footer h5 {
   align-items: center;
   gap: 21px;
   color: var(--hvid);
-  background-color: var(--prim);
+  background-color: var(--sort);
 }
 
 .graabgmedia__billede {
@@ -520,6 +545,10 @@ footer h5 {
     padding: 50px var(--ldesktop);
     gap: 25px;
   }
+  .kampagnevideo__graabg {
+    padding: 50px var(--ldesktop);
+    gap: 25px;
+  }
 
   .mediatext {
     flex-direction: row;
@@ -608,6 +637,11 @@ footer h5 {
     align-items: flex-start;
   }
   .kampagnevideo {
+    padding: 50px var(--ldesktop);
+    gap: 25px;
+  }
+
+  .kampagnevideo__graabg {
     padding: 50px var(--ldesktop);
     gap: 25px;
   }
