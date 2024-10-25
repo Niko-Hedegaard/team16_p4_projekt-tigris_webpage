@@ -411,6 +411,123 @@ footer h5 {
   height: auto;
 }
 
+/* faq accordion starter her -----------------------------------------------------------------------------------------------------------*/
+#faq-efterheader {
+  margin-top: 80px;
+  margin-right: 0;
+}
+
+/* FAQ Container */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: var(--sort);
+  color: var(--hvid);
+}
+
+/* FAQ Content Section */
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  padding: var(--mobile);
+  color: var(--hvid);
+}
+
+.faq-content h2 {
+  padding: var(--mobile);
+}
+
+/* Accordion Container */
+.accordion-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  padding: var(--mobile);
+  width: 100%;
+  max-width: 550px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--hvid);
+  width: 100%;
+}
+
+/* Accordion Title Styling */
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0px 15px 0px;
+  font-size: 1.8rem;
+  font-family: baloo-2, sans-serif;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  color: var(--hvid);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+  padding: var(--mobile);
+}
+
+/* FAQ Image Section på Mobile */
+.faq-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  margin-top: 21px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+/* Background Container Styling */
+.faq-background-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/tiger-stribes-backgroundimage.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*  img styling til centrering */
+.faq-image img {
+  position: absolute;
+  max-height: 300px;
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.faq-image img.zoom {
+  transform: scale(1.1);
+}
+
+/* faq accordion stopper her -----------------------------------------------------------------------------------------------------------*/
+
 /* Til små desktop skærme */
 @media screen and (min-width: 885px) and (max-width: 1023px) {
   * {
@@ -492,6 +609,53 @@ footer h5 {
   #footer__cta {
     align-self: flex-start;
   }
+/* faq accordion starter her -----------------------------------------------------------------------------------------------------------*/
+#faq-efterheader {
+  margin-top: 80px;
+  margin-right: 0;
+}
+
+.faq-container {
+    width: 100%;
+    align-self: center;
+    flex-direction: row;
+    max-width: 950px;
+    min-height: 500px;  
+}
+
+.faq-content {
+  width: 50%;
+  align-items: center;
+}
+
+.accordion-container {
+  width: 100%;
+  align-items: center;
+}
+
+.accordion {
+  padding: 20px;
+}
+
+.faq-image {
+  width: 50%;
+  height: auto;
+  margin-top: 0;
+}
+
+.faq-image img {
+  width: 10%;
+}
+
+.faq-content h2 {
+  font-size: 32px;
+}
+
+.accordion-title {
+  font-size: 20px;
+}
+/* faq accordion stopper her -----------------------------------------------------------------------------------------------------------*/
+
 }
 
 /* Til medium desktop skærme */
@@ -587,6 +751,54 @@ footer h5 {
   #footer__cta {
     align-self: flex-start;
   }
+
+  /* faq accordion starter her -----------------------------------------------------------------------------------------------------------*/
+  #faq-efterheader {
+    margin-top: 80px;
+    margin-right: 0;
+  }
+  
+  .faq-container {
+      width: 100%;
+      align-self: center;
+      flex-direction: row;
+      max-width: 950px;
+      min-height: 500px;  
+  }
+  .faq-content {
+      width: 50%;
+      align-items: center;
+  }
+
+  .accordion-container {
+      width: 100%;
+      align-items: center;
+  }
+
+  .accordion {
+      padding: 20px;
+  }
+
+  .faq-image {
+      width: 50%;
+      height: auto;
+      margin-top: 0;
+  }
+
+  .faq-image img {
+      width: 10%;
+  }
+
+  .faq-content h2 {
+      font-size: 32px;
+  }
+
+  .accordion-title {
+      font-size: 20px;
+}
+/* faq accordion stopper her -----------------------------------------------------------------------------------------------------------*/
+
+  
 }
 
 /* Til store desktop skærme */
@@ -683,4 +895,52 @@ footer h5 {
   #footer__cta {
     align-self: flex-start;
   }
+
+  /* faq accordion starter her -----------------------------------------------------------------------------------------------------------*/
+  #faq-efterheader {
+    margin-top: 80px;
+    margin-right: 0;
+  }
+  
+  .faq-container {
+      width: 100%;
+      align-self: center;
+      flex-direction: row;
+      max-width: 950px;
+      min-height: 500px;  
+  }
+
+  .faq-content {
+      width: 50%;
+      align-items: center;
+  }
+
+  .accordion-container {
+      width: 100%;
+      align-items: center;
+  }
+
+  .accordion {
+      padding: 20px;
+  }
+
+  .faq-image {
+      width: 50%;
+      height: auto;
+      margin-top: 0;
+  }
+
+  .faq-image img {
+      width: 10%;
+  }
+
+  .faq-content h2 {
+      font-size: 32px;
+  }
+
+  .accordion-title {
+      font-size: 20px;
+  }
+  /* faq accordion stopper her -----------------------------------------------------------------------------------------------------------*/
+
 }
