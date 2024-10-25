@@ -97,19 +97,19 @@
           <input type="number" class="input__skriv" placeholder="Beløb ..." />
           <input
             type="submit"
-            class="input__knap"
-            id="betaling__gemknap"
+            class="betaling__knap--input"
+            id="beløb__gemknap"
             value="Gem beløb"
           />
         </div>
       </div>
       <div class="betaling__box">
         <h4>Dine oplysninger</h4>
-        <div class="betaling__box--knapboks--verti">
+        <div class="betaling__box--knapbox--verti">
           <input type="text" class="input__skriv" placeholder="Navn ..." />
           <input type="text" class="input__skriv" placeholder="E-mail ..." />
           <input
-            type="text"
+            type="number"
             class="input__skriv"
             placeholder="mobilnummer ..."
           />
@@ -117,31 +117,38 @@
       </div>
       <div class="betaling__box">
         <h4>Vælg betalingsmetode</h4>
-        <div class="betaling__box--knapboks--verti">
+        <form class="betaling__box--knapboks--verti">
           <div class="betaling__box--checkbox">
-            <input type="checkbox" class="input__checkbox" value="mobilepay" />
-            <img src="" alt="" />
-            <p>Mobilepay</p>
+            <input
+              type="radio"
+              class="input__radio"
+              name="betaling"
+              value="mobilepay"
+            />
+            <img for="mobilepay" src="" alt="" />
+            <label>Mobilepay</label>
           </div>
           <div class="betaling__box--checkbox--verti">
             <input
-              type="checkbox"
-              class="input__checkbox"
+              type="radio"
+              class="input__radio"
+              name="betaling"
               value="kortbetaling"
             />
             <img src="" alt="" />
-            <p>Kortbetaling</p>
+            <label for="kortbetaling">Kortbetaling</label>
           </div>
           <div class="betaling__box--checkbox--verti">
             <input
-              type="checkbox"
-              class="input__checkbox"
+              type="radio"
+              class="input__radio"
+              name="betaling"
               value="Betalingsservice"
             />
             <img src="" alt="" />
-            <p>Betalingsservice</p>
+            <label>Betalingsservice</label>
           </div>
-        </div>
+        </form>
       </div>
     </section>
 
