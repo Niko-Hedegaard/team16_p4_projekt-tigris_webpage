@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Om os</title>
+    <title>Støt tigeren</title>
 
     <!-- Link til JS og CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/stot-tigeren_nikolai-betaling.css" />
     <script src="scripts/script.js" defer></script>
     <!-- Link til fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/fhp7krt.css" />
@@ -65,77 +65,84 @@
       </div>
     </header>
 
-    <section class="mediatext__vertical" id="hero__efterheader">
-      <h1>Hvem er vi?</h1>
-      <p>
-        Projekt Tigris er en organisation, som kæmper for at sikre tigerens
-        overlevelse gennem en kombination af forskning, bevaring, samarbejde og
-        oplysning. Vi arbejder for at beskytte tigerens naturlige levesteder,
-        bekæmpe ulovlig krybskytteri og engagere lokalsamfund i
-        tigerbevaringsprojekter. Vores indsats involverer både lokale og
-        internationale partnere, og vi har fokus på bæredygtig udvikling og
-        langsigtede løsninger. Vi håber at med vores arbejde, at vi i fremtiden
-        kan se en sikker og stabil bestand af tigere, så vi ikke ender med at
-        udryde dem.
-      </p>
-    </section>
-    <section class="mediatext__vertical">
-      <h2>Bedre imorgen?</h2>
-      <p>
-        Organisationen består af 5 Studerende fra UCL erhvervs akedemi og vi
-        ønsker at yde vores biddrag. Vi arbejder hver dag, for et “bedre
-        imorgen”. Bedre imorgen initiativet er vores flagskibs iitiativ inden
-        for tigerens vældfærd.
-        <br />
-        Den sikre at der skal være fremgang hver dag, så man altid kan kigge
-        tilbage og vide, at der faktisk sker noget og at vi skaber en fremtid
-        for tigeren. I videon neden under er det er det muligt at se hvordan
-        “bedre imorgen” benyttes i praktisis.
-      </p>
-    </section>
-    <section class="mediatext__vertical">
-      <iframe
-        src="https://www.youtube.com/embed/yTAp-sSMU_w?si=fp3BFIWV6kNtzit5"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-        class="video"
-      ></iframe>
-      <p>
-        Her skal der stå noget tekst til infografikken som forklarer lidt om
-        hvordan vi er som organisation.
-      </p>
-    </section>
-    <section class="graabgmedia">
-      <div class="graabgmedia__billede">
-        <img src="../images/hero-billede.jpg" alt="infografik" />
-      </div>
-      <div class="graabgmedia__textbox">
-        <h2>Infografik der fortæller om vores forskel</h2>
-        <p>
-          Her skal der stå noget tekst til infografikken som forklarer lidt om
-          hvordan vi er som organisation.
+    <section class="hero" id="hero__efterheader">
+      <div class="sortbg">
+        <h1 class="hero__h1">Støt tigeren nu!</h1>
+        <p class="hero__paragraph">
+          Hjælp os med at få genoprettet tigerens naturlige habbitat. Ved at
+          støtte projekt Tigris sikrer du at tigeren har en fremtid og ikke
+          uddør.
         </p>
       </div>
     </section>
-    <section class="kampagnevideo">
-      <h2>Bag om projektet</h2>
-      <div class="kampagnevideo__video">
-        <iframe
-          src="https://www.youtube.com/embed/yTAp-sSMU_w?si=fp3BFIWV6kNtzit5"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          class="video"
-        ></iframe>
+
+    <section class="betaling">
+      <h2>Hvordan vil du hjælpe?</h2>
+      <div class="betaling__box">
+        <h4>vælg abonnementsform</h4>
+        <div class="betaling__box--knapbox--hori">
+          <button class="betaling__knap">Månedligbetaling</button>
+          <button class="betaling__knap">Enkeltbetaling</button>
+        </div>
       </div>
-      <p>
-        Her skal der stå noget tekst om hvem der har lavet videoen og kort om
-        hvad den handler om. Den handler om hvordan vi har stablet projektet på
-        benene.
-      </p>
+      <div class="betaling__box">
+        <h4>Vælg beløb</h4>
+        <div class="betaling__box--knapbox--hori">
+          <button class="betaling__knap">50 kr.</button>
+          <button class="betaling__knap">100 kr.</button>
+          <button class="betaling__knap">150 kr.</button>
+          <button class="betaling__knap">Andet</button>
+        </div>
+        <div class="betaling__box--knapbox--hori">
+          <input type="number" class="input__skriv" placeholder="Beløb ..." />
+          <input
+            type="submit"
+            class="input__knap"
+            id="betaling__gemknap"
+            value="Gem beløb"
+          />
+        </div>
+      </div>
+      <div class="betaling__box">
+        <h4>Dine oplysninger</h4>
+        <div class="betaling__box--knapboks--verti">
+          <input type="text" class="input__skriv" placeholder="Navn ..." />
+          <input type="text" class="input__skriv" placeholder="E-mail ..." />
+          <input
+            type="text"
+            class="input__skriv"
+            placeholder="mobilnummer ..."
+          />
+        </div>
+      </div>
+      <div class="betaling__box">
+        <h4>Vælg betalingsmetode</h4>
+        <div class="betaling__box--knapboks--verti">
+          <div class="betaling__box--checkbox">
+            <input type="checkbox" class="input__checkbox" value="mobilepay" />
+            <img src="" alt="" />
+            <p>Mobilepay</p>
+          </div>
+          <div class="betaling__box--checkbox--verti">
+            <input
+              type="checkbox"
+              class="input__checkbox"
+              value="kortbetaling"
+            />
+            <img src="" alt="" />
+            <p>Kortbetaling</p>
+          </div>
+          <div class="betaling__box--checkbox--verti">
+            <input
+              type="checkbox"
+              class="input__checkbox"
+              value="Betalingsservice"
+            />
+            <img src="" alt="" />
+            <p>Betalingsservice</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
