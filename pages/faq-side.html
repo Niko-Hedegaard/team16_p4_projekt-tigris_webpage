@@ -5,11 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Støt tigeren</title>
+    <title>Om os</title>
 
     <!-- Link til JS og CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <script src="scripts/script.js" defer></script>
+    <script src="../scripts/accordion-scripts.js" defer></script>
     <!-- Link til fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/fhp7krt.css" />
     <script
@@ -65,15 +66,51 @@
       </div>
     </header>
 
-    <section class="hero" id="hero__efterheader">
-      <div class="sortbg">
-        <h1 class="hero__h1">Støt tigeren nu!</h1>
-        <p class="hero__paragraph">
-          Hjælp os med at få genoprettet tigerens naturlige habbitat. Ved at
-          støtte projekt Tigris sikrer du at tigeren har en fremtid og ikke
-          uddør.
-        </p>
-      </div>
+    <section class="mediatext__vertical" id="faq-efterheader">
+      <div class="faq-container">
+        <div class="faq-content">
+            <h2>Frequently Asked Questions </h2>
+            <div class="accordion-container">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-title" id="accordion-title-0">
+                        Om os
+                        <img src="../images/icons/arrow-down.svg" alt="Downward arrow">
+                    </button>
+                    <div class="accordion-content" id="accordion-content-0">
+                        <p>Organisationen består af 5 Studerende fra UCL erhvervs akedemi og vi ønsker at yde vores biddrag.
+                            Vi arbejder hver dag, for et “bedre imorgen”.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-title" id="accordion-title-1">
+                        Vores mål
+                        <img src="../images/icons/arrow-down.svg" alt="Downward arrow">
+                    </button>
+                    <div class="accordion-content" id="accordion-content-1">
+                        <p>Projekt Tigris er en organisation, som kæmper for at sikre tigerens overlevelse gennem en kombination af forskning, bevaring, samarbejde og oplysning.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-title" id="accordion-title-2">
+                        Vores initiativ
+                        <img src="../images/icons/arrow-down.svg" alt="Downward arrow">
+                    </button>
+                    <div class="accordion-content" id="accordion-content-2">
+                        <p>Bedre imorgen initiativet er vores flagskibs initiativ inden for tigerens vældfærd. Den sikre at der skal være fremgang hver dag, så man altid kan kigge tilbage og vide, at der faktisk sker noget og at vi skaber en fremtid for tigeren.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="faq-image">
+            <div class="faq-background-image" id="faq-background-image"></div>
+            <img id="faq-image" src="../images/icons/question-mark-icon.svg" alt="FAQ Image">
+        </div>
+    </div>
+    </section>
+    <section class="mediatext__vertical">
+      <h2>Mere info?</h2>
     </section>
 
     <footer>
