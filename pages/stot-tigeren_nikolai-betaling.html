@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/3cffa401ab.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../scripts/betalingsservice.js" defer></script>
   </head>
 
   <body>
@@ -93,7 +94,10 @@
           <button class="betaling__knap">150 kr.</button>
           <button class="betaling__knap">Andet</button>
         </div>
-        <div class="betaling__box--knapbox--hori">
+        <div
+          class="betaling__box--knapbox--hori"
+          id="betaling__input--skrivbelob"
+        >
           <input type="number" class="input__skriv" placeholder="Beløb ..." />
           <input
             type="submit"
@@ -117,7 +121,7 @@
       </div>
       <div class="betaling__box">
         <h4>Vælg betalingsmetode</h4>
-        <form class="betaling__box--knapboks--verti">
+        <form class="betaling__box--form--verti">
           <div class="betaling__box--checkbox">
             <input
               type="radio"
@@ -125,30 +129,46 @@
               name="betaling"
               value="mobilepay"
             />
-            <img for="mobilepay" src="" alt="" />
+            <img
+              for="mobilepay"
+              src="../images/mobilepay.png"
+              alt="Mobilepay logo"
+            />
             <label>Mobilepay</label>
           </div>
-          <div class="betaling__box--checkbox--verti">
+          <div class="betaling__box--checkbox">
             <input
               type="radio"
               class="input__radio"
               name="betaling"
               value="kortbetaling"
             />
-            <img src="" alt="" />
+            <img
+              for="kortbetaling"
+              src="../images/kortbetaling.svg"
+              alt="Kortbetaling ikon"
+            />
             <label for="kortbetaling">Kortbetaling</label>
           </div>
-          <div class="betaling__box--checkbox--verti">
+          <div class="betaling__box--checkbox">
             <input
               type="radio"
               class="input__radio"
               name="betaling"
-              value="Betalingsservice"
+              value="betalingsservice"
             />
-            <img src="" alt="" />
+            <img
+              for="betalingsservice"
+              src="../images/betalingsservice.svg"
+              alt="Betalingsservice logo"
+            />
             <label>Betalingsservice</label>
           </div>
         </form>
+      </div>
+      <div class="betaling__box--cta">
+        <h3 id="betaling__pris">pris: 0 kr.</h3>
+        <button class="betaling__knap--cta">Fortsæt til betaling</button>
       </div>
     </section>
 

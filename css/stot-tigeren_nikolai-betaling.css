@@ -437,14 +437,15 @@ footer h5 {
   flex-direction: column;
   gap: 10px;
 }
+
 .betaling__box--knapbox--hori {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-between;
 }
 .betaling__knap {
-  width: 100%;
+  width: fit-content;
   padding: 5px 15px;
   border: 2px solid var(--hvid);
   background-color: var(--sort);
@@ -459,6 +460,11 @@ footer h5 {
   border-color: var(--prim);
   cursor: pointer;
 }
+.betaling__knap.active {
+  border-color: var(--prim);
+  background-color: var(--prim);
+  color: var(--hvid);
+}
 .input__skriv {
   border: none;
   font-size: 0.833rem;
@@ -471,6 +477,9 @@ footer h5 {
 }
 .input__skriv:hover {
   border: 2px solid var(--prim);
+}
+#betaling__input--skrivbelob {
+  display: none;
 }
 .betaling__knap--input {
   width: fit-content;
@@ -487,6 +496,47 @@ footer h5 {
   background-color: var(--prim);
   cursor: pointer;
 }
+
+.betaling__box--form--verti {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.betaling__box--checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.betaling__box--checkbox img {
+  width: 30px;
+  height: auto;
+  color: var(--hvid);
+}
+
+.betaling__box--cta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+}
+.betaling__knap--cta {
+  width: 100%;
+  padding: 5px 15px;
+  border: none;
+  background-color: var(--prim);
+  color: var(--hvid);
+  border-radius: 5px;
+  font-weight: var(--bold);
+  transition: 0.3s;
+}
+.betaling__knap--cta:hover {
+  width: 100%;
+  height: auto;
+  background-color: var(--tert);
+  color: var(--hvid);
+  cursor: pointer;
+}
+/* Betalingsservice ---------------------------------------------------------------------------------------------------------------*/
 
 /* Til små desktop skærme */
 @media screen and (min-width: 885px) and (max-width: 1023px) {
