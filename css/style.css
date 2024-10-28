@@ -540,7 +540,7 @@ footer h5 {
   padding: 20px; /* Indvendig afstand */
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
-  width: 900px; /* Bredde på containeren */
+  width: 90%; /* Bredde på containeren */
   margin: 0 auto; /* Centrerer containeren horisontalt */
   font-family: "Baloo 2";
   color: #F7E9CE;
@@ -1007,5 +1007,14 @@ input::placeholder {
       font-size: 20px;
   }
   /* faq accordion stopper her -----------------------------------------------------------------------------------------------------------*/
+ 
+  /*   frivilig event tilmelding-------------------------------------------------------------------------------------------------------*/
+  .event-container {
+    width: 60%;
+  }
+  
 
 }
+
+
+
