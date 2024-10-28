@@ -165,21 +165,79 @@ header {
 }
 
 /* Hero sektion ---------------------------------------------------------------------------------------*/
-.hero {
-  display: flex;
-  width: 100%;
-  height: 365px;
-  padding: 35px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  text-align: center;
-  background-image: url("../images/hero.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.highlight {
+  color: var(--prim);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sortbg {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 80%;
+}
+
+.hero__h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  color: var(--hvid);
+}
+
+.hero__paragraph {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: var(--hvid);
+}
+
+.button__cta--neg {
+  display: inline-block;
+  background-color: #f78102;
+  color: var(--hvid);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 
 /* Mission og vision ------------------------------------------------------------------------------------*/
 .misogvis {
