@@ -10,6 +10,7 @@
     <!-- Link til JS og CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/tilmed.js" defer></script>
     <!-- Link til fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/fhp7krt.css" />
     <script
@@ -64,7 +65,7 @@
         >
       </div>
     </header>
-
+    
     <section class="hero" id="hero__efterheader">
       <div class="sortbg">
         <h1 class="hero__h1">Støt tigeren nu!</h1>
@@ -75,6 +76,37 @@
         </p>
       </div>
     </section>
+
+    <section>
+      <!-- Event Container -->
+   <div class="event-container">
+     <h1>Kommende Velgørenhedsevents</h1> 
+     <h2>Tilmeld dig et Event</h2> 
+     <!-- Checkboxe til valg af events -->
+     <div class="event-checkbox">
+         <label>
+             <input type="checkbox" class="event-checkbox-input" value="På gaden (1 dag)">På gaden</label>
+     </div>
+     <div class="event-checkbox">
+         <label>
+             <input type="checkbox" class="event-checkbox-input" value="Foredrag">Foredrag</label>
+     </div>
+     <div class="event-checkbox">
+         <label>
+             <input type="checkbox" class="event-checkbox-input" value="Til Indonesien">Til Indonesien</label>
+     </div>
+     <div class="event-checkbox">
+         <label>
+             <input type="checkbox" class="event-checkbox-input" value="Marketing hjælp">Marketing hjælp</label>
+     </div>
+
+     <h2>Kontakt Oplysninger</h2> 
+     <input type="text" id="name" placeholder="Navn"> 
+     <input type="email" id="email" placeholder="E-mail"> 
+     <input type="tel" id="phone" placeholder="Telefonnummer"> 
+     <button id="registerButton">Tilmeld</button> 
+ </div>
+   </section>
 
     <footer>
       <img

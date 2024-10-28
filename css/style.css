@@ -528,6 +528,71 @@ footer h5 {
 
 /* faq accordion stopper her -----------------------------------------------------------------------------------------------------------*/
 
+/* Her starter css til firvilig tilmelding -------------------------------------------------------------*/
+
+/* Styling for event containeren */
+.event-container {
+  display: flex; /* Brug flexbox til layout */
+  flex-direction: column; /* Stak indholdet vertikalt */
+  align-items: start; /* Juster indholdet til midten */
+  justify-content: center; /* Centrering af indholdet vertikalt */
+  background: #1D1B1D;
+  padding: 20px; /* Indvendig afstand */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+  width: 900px; /* Bredde på containeren */
+  margin: 0 auto; /* Centrerer containeren horisontalt */
+  font-family: "Baloo 2";
+  color: #F7E9CE;
+  margin-top: 50px;
+}
+
+/* Styling for checkboxe */
+.event-checkbox {
+  display: flex; /* Brug flexbox til layout */
+  align-items: center; /* Vertikal centrering */
+  margin: 5px 0; /* Afstand mellem checkboxe */
+  color: #F7E9CE; 
+}
+
+.event-checkbox label {
+  display: flex; /* Gør label til en flex container */
+  align-items: center; /* Centrering af checkbox og tekst */
+  justify-content: left; /* Justering til venstre */
+  font-size: 24px; 
+}
+
+/* Styling for checkbox input */
+.event-checkbox-input {
+  width: 24px; /* Bredde på checkbox */
+  height: 24px; /* Højde på checkbox */
+  margin-right: 20px; /* Plads mellem checkbox og tekst */
+  cursor: pointer; /* Ændrer musemarkør til pointer ved hover */
+  transform: scale(1); /* Ingen skalering, bruger pixelstørrelsen */
+}
+
+/* Styling for inputfelter */
+input {
+  padding: 10px; /* Indvendig afstand i inputfelterne */
+  margin: 10px 0; /* Afstand mellem inputfelterne */
+  border-radius: 5px; /* Runde kanter på inputfelterne */
+  font-size: 16px; 
+  background-color: #F7E9CE; 
+  font-family: "Baloo 2"; 
+  height: 44px;
+  width: 100%;
+}
+
+/* Placeholder-tekst styling */
+input::placeholder {
+  color: #1D1B1D;
+  font-family: "Baloo 2";
+}
+
+/* Her Stopper css til firvilig tilmelding -------------------------------------------------------------*/
+
+
+
 /* Til små desktop skærme */
 @media screen and (min-width: 885px) and (max-width: 1023px) {
   * {
