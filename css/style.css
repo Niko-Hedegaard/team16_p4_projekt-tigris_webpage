@@ -913,6 +913,90 @@ input::placeholder {
 }
 /* Betalingsservice ---------------------------------------------------------------------------------------------------------------*/
 
+/* Kontakt formular */
+.kontakt-sec {
+  display: flex;
+  width: 100%;
+  padding: 100px var(--mobile);
+  height: auto;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+  background-color: var(--sort);
+  color: var(--hvid);
+  text-align: left;
+  margin-bottom: -50px;
+}
+
+.kontakt-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.kontakt-left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+
+.kontakt-infoboks {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+  align-items: center;
+}
+
+.kontakt-info {
+  display: flex;
+  gap: 7.5px;
+  font-size: 0.833rem;
+  align-items: center;
+}
+
+.kontakt-info > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1px;
+  color: var(--hvid);
+  transform-origin: left;
+  transition: 0.3s;
+}
+
+.kontakt-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
+.kontakt-input {
+  width: 100%;
+  border: none;
+  background-color: var(--hvid);
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.kontakt-input:hover {
+  border-color: var(--prim);
+}
+
+#kontakt-besked {
+  resize: none;
+  height: 150px;
+  border-radius: 5px;
+}
+
+#button__cta--kontakt {
+  margin-top: 10px;
+}
+
 /* Til små desktop skærme */
 @media screen and (min-width: 885px) and (max-width: 1023px) {
   * {
@@ -1054,6 +1138,10 @@ input::placeholder {
   }
   .betaling__knap--cta {
     max-width: 300px;
+  }
+
+  .kontakt-sec {
+    padding: 100px var(--sdesktop);
   }
 }
 
@@ -1210,6 +1298,10 @@ input::placeholder {
   }
   .betaling__knap--cta {
     max-width: 300px;
+  }
+
+  .kontakt-sec {
+    padding: 100px var(--ldesktop);
   }
 }
 
@@ -1369,5 +1461,9 @@ input::placeholder {
   }
   .betaling__knap--cta {
     max-width: 300px;
+  }
+
+  .kontakt-sec {
+    padding: 100px var(--ldesktop);
   }
 }

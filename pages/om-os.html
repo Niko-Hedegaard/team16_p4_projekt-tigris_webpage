@@ -50,7 +50,7 @@
               <a href="../pages/om-os.html">Om os</a>
             </li>
             <li class="nav__menudesk--button">
-              <a href="../pages/om-os.html">Kontakt</a>
+              <a href="../pages/om-os.html#kontakt-side">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -176,35 +176,56 @@
         hvordan vi er som organisation.
       </p>
     </section>
-    <section class="graabgmedia">
-      <div class="graabgmedia__billede">
-        <img src="../images/hero-billede.jpg" alt="infografik" />
+
+    <section class="kontakt-sec" id="kontakt-side">
+      <h2>Kontakt os</h2>
+      <div class="kontakt-grid">
+        <div class="kontakt-left">
+          <p>
+            Har du spørgsmål, eller vil du vide mere om vores arbejde? Udfyld
+            formularen, så vender vi hurtigt tilbage til dig!
+          </p>
+        </div>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="kontakt-right"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="e7dca854-534c-4f0a-af8e-36e2c187b734"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Dit fulde navn ..."
+            class="kontakt-input"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail ..."
+            class="kontakt-input"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Skriv din besked her ..."
+            class="kontakt-input"
+            id="kontakt-besked"
+            required
+          ></textarea>
+          <button
+            class="button__cta--neg"
+            id="button__cta--kontakt"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
       </div>
-      <div class="graabgmedia__textbox">
-        <h2>Infografik der fortæller om vores forskel</h2>
-        <p>
-          Her skal der stå noget tekst til infografikken som forklarer lidt om
-          hvordan vi er som organisation.
-        </p>
-      </div>
-    </section>
-    <section class="kampagnevideo">
-      <h2>Bag om projektet</h2>
-      <div class="kampagnevideo__video">
-        <iframe
-          src="https://www.youtube.com/embed/yTAp-sSMU_w?si=fp3BFIWV6kNtzit5"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          class="video"
-        ></iframe>
-      </div>
-      <p>
-        Her skal der stå noget tekst om hvem der har lavet videoen og kort om
-        hvad den handler om. Den handler om hvordan vi har stablet projektet på
-        benene.
-      </p>
     </section>
 
     <footer>
