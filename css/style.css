@@ -48,6 +48,10 @@ h3 {
   font-weight: var(--bold);
   line-height: 1.1;
 }
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
 h5 {
   font-size: 1rem;
@@ -299,7 +303,7 @@ header {
 }
 
 .hero__paragraph {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin: 10px 0;
   color: var(--hvid);
 }
@@ -445,16 +449,19 @@ header {
   align-items: flex-start;
   gap: 21px;
   color: var(--sort);
+  flex-basis: 50%;
 }
 
 .mediatext img {
   width: 100%;
   height: auto;
+  flex: 1;
 }
 
 .mediatext__textbox {
   display: flex;
   flex-direction: column;
+  flex: 1;
   text-align: left;
   align-items: flex-start;
   height: auto;
@@ -715,6 +722,15 @@ footer h5 {
 /* Her starter css til firvilig tilmelding -------------------------------------------------------------*/
 
 /* Styling for event containeren */
+.event {
+  background-image: url("../images/stot-tigeren-event-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 0;
+  margin-bottom: -50px;
+}
+
 .event-container {
   display: flex; /* Brug flexbox til layout */
   flex-direction: column; /* Stak indholdet vertikalt */
@@ -728,7 +744,6 @@ footer h5 {
   margin: 0 auto; /* Centrerer containeren horisontalt */
   font-family: "Baloo 2";
   color: #f7e9ce;
-  margin-top: 50px;
 }
 
 /* Styling for checkboxe */
@@ -952,6 +967,10 @@ input::placeholder {
     gap: 80px;
     align-items: center;
   }
+  .mediatext img,
+  .mediatext .mediatext__textbox {
+    width: 50%;
+  }
   .mediatext__textbox {
     gap: 25px;
     width: 100%;
@@ -1104,6 +1123,10 @@ input::placeholder {
     gap: 80px;
     align-items: center;
   }
+  .mediatext img,
+  .mediatext .mediatext__textbox {
+    width: 50%;
+  }
   .mediatext__textbox {
     gap: 25px;
     width: 100%;
@@ -1252,6 +1275,10 @@ input::placeholder {
     padding: 50px var(--ldesktop);
     gap: 80px;
     align-items: center;
+  }
+  .mediatext img,
+  .mediatext .mediatext__textbox {
+    width: 50%;
   }
   .mediatext__textbox {
     gap: 25px;
