@@ -69,6 +69,10 @@ h5 {
   color: var(--hvid);
   width: fit-content;
   border-radius: 7px;
+  transition: 0.3s;
+}
+.button__cta--neg:hover {
+  background: var(--tert);
 }
 
 .button__cta--pos {
@@ -82,6 +86,10 @@ h5 {
   color: var(--hvid);
   width: fit-content;
   border-radius: 7px;
+  transition: 0.3s;
+}
+.button__cta--pos:hover {
+  background: var(--tert);
 }
 
 #header__button--cta {
@@ -189,6 +197,22 @@ header {
   color: var(--hvid);
   padding: 10px 15px;
   font-size: 0.833rem;
+  position: relative;
+  transform-origin: left;
+  transition: 0.3s;
+}
+.nav__menudesk--button a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -2px;
+  border-bottom: 2px solid var(--prim);
+  transition: right 0.3s ease;
+}
+.nav__burgermenu--button a:hover::after {
+  right: 0;
+  transition-delay: 0.2s;
 }
 
 #hero__efterheader {
@@ -523,6 +547,22 @@ footer h5 {
   text-decoration: none;
   font-size: 0.833rem;
   color: var(--hvid);
+  position: relative;
+  transform-origin: left;
+  transition: 0.3s;
+}
+.footer__menu--ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -2px;
+  border-bottom: 2px solid var(--prim);
+  transition: right 0.3s ease;
+}
+.footer__menu--ul li a:hover::after {
+  transition-delay: 0.2s;
+  right: 0;
 }
 
 .footer__some {
