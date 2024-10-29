@@ -109,6 +109,7 @@ header {
   gap: 14px;
   position: fixed;
   top: 0;
+  z-index: 99999;
 }
 
 .header__logo--langs {
