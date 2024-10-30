@@ -749,7 +749,7 @@ footer h5 {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-image: url(../images/tigris-stribe.jpg);
+  background-image: url(../images/tigris-stribe.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -773,7 +773,7 @@ footer h5 {
 
 /* Styling for event containeren */
 .event {
-  background-image: url("../images/stot-tigeren-event-bg.jpg");
+  background-image: url("../images/stot-tigeren-event-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
