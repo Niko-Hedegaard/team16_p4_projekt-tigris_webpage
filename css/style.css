@@ -69,7 +69,7 @@ h5 {
   color: var(--hvid);
   width: fit-content;
   border-radius: 7px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 .button__cta--neg:hover {
   background: var(--tert);
@@ -86,7 +86,7 @@ h5 {
   color: var(--hvid);
   width: fit-content;
   border-radius: 7px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 .button__cta--pos:hover {
   background: var(--tert);
@@ -199,7 +199,7 @@ header {
   font-size: 0.833rem;
   position: relative;
   transform-origin: left;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 .nav__menudesk--button a::after {
   content: "";
@@ -210,9 +210,19 @@ header {
   border-bottom: 2px solid var(--prim);
   transition: right 0.3s ease;
 }
-.nav__burgermenu--button a:hover::after {
+.nav__menudesk--button a:hover::after {
   right: 0;
   transition-delay: 0.2s;
+}
+.nav__menudesk--button a:hover {
+  color: var(--prim);
+}
+.nav__menudesk--button--active a {
+  color: var(--tert);
+  border-bottom: 2px solid var(--tert);
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 0.833rem;
 }
 
 #hero__efterheader {
@@ -549,7 +559,7 @@ footer h5 {
   color: var(--hvid);
   position: relative;
   transform-origin: left;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 .footer__menu--ul li a::after {
   content: "";
@@ -1004,7 +1014,7 @@ input::placeholder {
   letter-spacing: 1px;
   color: var(--hvid);
   transform-origin: left;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .kontakt-right {
@@ -1020,7 +1030,7 @@ input::placeholder {
   border: none;
   background-color: var(--hvid);
   padding: 15px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .kontakt-input:hover {
