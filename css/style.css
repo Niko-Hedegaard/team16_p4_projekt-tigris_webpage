@@ -48,6 +48,7 @@ h3 {
   font-weight: var(--bold);
   line-height: 1.1;
 }
+
 h4 {
   font-size: 1.2rem;
   font-weight: bold;
@@ -71,6 +72,7 @@ h5 {
   border-radius: 7px;
   transition: 0.3s ease;
 }
+
 .button__cta--neg:hover {
   background: var(--tert);
 }
@@ -88,6 +90,7 @@ h5 {
   border-radius: 7px;
   transition: 0.3s ease;
 }
+
 .button__cta--pos:hover {
   background: var(--tert);
 }
@@ -201,6 +204,7 @@ header {
   transform-origin: left;
   transition: 0.3s ease;
 }
+
 .nav__menudesk--button a::after {
   content: "";
   position: absolute;
@@ -210,13 +214,16 @@ header {
   border-bottom: 2px solid var(--prim);
   transition: right 0.3s ease;
 }
+
 .nav__menudesk--button a:hover::after {
   right: 0;
   transition-delay: 0.2s;
 }
+
 .nav__menudesk--button a:hover {
   color: var(--prim);
 }
+
 .nav__menudesk--button--active a {
   color: var(--tert);
   border-bottom: 2px solid var(--tert);
@@ -561,6 +568,7 @@ footer h5 {
   transform-origin: left;
   transition: 0.3s ease;
 }
+
 .footer__menu--ul li a::after {
   content: "";
   position: absolute;
@@ -570,6 +578,7 @@ footer h5 {
   border-bottom: 2px solid var(--prim);
   transition: right 0.3s ease;
 }
+
 .footer__menu--ul li a:hover::after {
   transition-delay: 0.2s;
   right: 0;
@@ -621,6 +630,7 @@ footer h5 {
   width: 100%;
   height: auto;
 }
+
 .graabgmedia__billede img {
   width: 100%;
   height: auto;
@@ -782,49 +792,71 @@ footer h5 {
 }
 
 .event-container {
-  display: flex; /* Brug flexbox til layout */
-  flex-direction: column; /* Stak indholdet vertikalt */
-  align-items: start; /* Juster indholdet til midten */
-  justify-content: center; /* Centrering af indholdet vertikalt */
+  display: flex;
+  /* Brug flexbox til layout */
+  flex-direction: column;
+  /* Stak indholdet vertikalt */
+  align-items: start;
+  /* Juster indholdet til midten */
+  justify-content: center;
+  /* Centrering af indholdet vertikalt */
   background: #1d1b1d;
-  padding: 20px; /* Indvendig afstand */
+  padding: 20px;
+  /* Indvendig afstand */
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
-  width: 90%; /* Bredde på containeren */
-  margin: 0 auto; /* Centrerer containeren horisontalt */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Skyggeeffekt */
+  width: 90%;
+  /* Bredde på containeren */
+  margin: 0 auto;
+  /* Centrerer containeren horisontalt */
   font-family: "Baloo 2";
   color: #f7e9ce;
 }
 
 /* Styling for checkboxe */
 .event-checkbox {
-  display: flex; /* Brug flexbox til layout */
-  align-items: center; /* Vertikal centrering */
-  margin: 5px 0; /* Afstand mellem checkboxe */
+  display: flex;
+  /* Brug flexbox til layout */
+  align-items: center;
+  /* Vertikal centrering */
+  margin: 5px 0;
+  /* Afstand mellem checkboxe */
   color: #f7e9ce;
 }
 
 .event-checkbox label {
-  display: flex; /* Gør label til en flex container */
-  align-items: center; /* Centrering af checkbox og tekst */
-  justify-content: left; /* Justering til venstre */
+  display: flex;
+  /* Gør label til en flex container */
+  align-items: center;
+  /* Centrering af checkbox og tekst */
+  justify-content: left;
+  /* Justering til venstre */
   font-size: 24px;
 }
 
 /* Styling for checkbox input */
 .event-checkbox-input {
-  width: 24px; /* Bredde på checkbox */
-  height: 24px; /* Højde på checkbox */
-  margin-right: 20px; /* Plads mellem checkbox og tekst */
-  cursor: pointer; /* Ændrer musemarkør til pointer ved hover */
-  transform: scale(1); /* Ingen skalering, bruger pixelstørrelsen */
+  width: 24px;
+  /* Bredde på checkbox */
+  height: 24px;
+  /* Højde på checkbox */
+  margin-right: 20px;
+  /* Plads mellem checkbox og tekst */
+  cursor: pointer;
+  /* Ændrer musemarkør til pointer ved hover */
+  transform: scale(1);
+  /* Ingen skalering, bruger pixelstørrelsen */
 }
 
 /* Styling for inputfelter */
 input {
-  padding: 10px; /* Indvendig afstand i inputfelterne */
-  margin: 10px 0; /* Afstand mellem inputfelterne */
-  border-radius: 5px; /* Runde kanter på inputfelterne */
+  padding: 10px;
+  /* Indvendig afstand i inputfelterne */
+  margin: 10px 0;
+  /* Afstand mellem inputfelterne */
+  border-radius: 5px;
+  /* Runde kanter på inputfelterne */
   font-size: 16px;
   background-color: #f7e9ce;
   font-family: baloo-2, sans-serif;
@@ -849,11 +881,13 @@ input::placeholder {
   flex-direction: column;
   gap: 30px;
 }
+
 .betaling__box {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .betaling__box--knapbox--verti {
   display: flex;
   flex-direction: column;
@@ -866,6 +900,7 @@ input::placeholder {
   flex-wrap: wrap;
   gap: 5px;
 }
+
 .betaling__knap {
   width: fit-content;
   padding: 5px 15px;
@@ -876,17 +911,20 @@ input::placeholder {
   font-weight: var(--bold);
   transition: 0.3s;
 }
+
 .betaling__knap:hover {
   background-color: var(--prim);
   color: var(--hvid);
   border-color: var(--prim);
   cursor: pointer;
 }
+
 .betaling__knap.active {
   border-color: var(--prim);
   background-color: var(--prim);
   color: var(--hvid);
 }
+
 .input__skriv {
   border: none;
   font-size: 0.833rem;
@@ -898,15 +936,19 @@ input::placeholder {
   background-color: var(--hvid);
   transition: 0.3s;
 }
+
 .input__skriv:hover {
   border: 2px solid var(--prim);
 }
+
 .input__radio {
   width: 20px;
 }
+
 #betaling__input--skrivbelob {
   display: none;
 }
+
 .betaling__knap--input {
   width: fit-content;
   font-weight: var(--bold);
@@ -917,6 +959,7 @@ input::placeholder {
   background-color: var(--hvid);
   transition: 0.3s;
 }
+
 .betaling__knap--input:hover {
   color: var(--hvid);
   background-color: var(--prim);
@@ -927,11 +970,13 @@ input::placeholder {
   display: flex;
   flex-direction: column;
 }
+
 .betaling__box--checkbox {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .betaling__box--checkbox img {
   width: 30px;
   height: auto;
@@ -944,6 +989,7 @@ input::placeholder {
   gap: 10px;
   margin-top: 25px;
 }
+
 .betaling__knap--cta {
   width: 100%;
   padding: 5px 15px;
@@ -954,6 +1000,7 @@ input::placeholder {
   font-weight: var(--bold);
   transition: 0.3s;
 }
+
 .betaling__knap--cta:hover {
   width: 100%;
   height: auto;
@@ -961,6 +1008,7 @@ input::placeholder {
   color: var(--hvid);
   cursor: pointer;
 }
+
 /* Betalingsservice ---------------------------------------------------------------------------------------------------------------*/
 
 /* Kontakt formular */
@@ -1007,7 +1055,7 @@ input::placeholder {
   align-items: center;
 }
 
-.kontakt-info > a {
+.kontakt-info>a {
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
@@ -1047,6 +1095,107 @@ input::placeholder {
   margin-top: 10px;
 }
 
+/*Til mobilskærme*/
+@media screen and (max-width: 884px) {
+  * {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .hero {
+    padding: 100px 10%;
+    gap: 15px;
+    height: 60vh;
+    /* Mindre højde til mobil */
+  }
+
+  .hero__h1 {
+    font-size: 2rem;
+  }
+
+  .hero__paragraph {
+    font-size: 0.9rem;
+  }
+
+  .sortbg {
+    bottom: 15%;
+    padding: 10px;
+    max-width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .button__cta--neg {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .pagination-dots {
+    gap: 8px;
+    padding: 6px 12px;
+    bottom: 15px;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .prev,
+  .next {
+    font-size: 1.2rem;
+    padding: 6px 10px;
+  }
+
+  .misogvis {
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .kampagnevideo,
+  .mediatext,
+  .mediatext__vertical,
+  .graabgmedia {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .mediatext {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mediatext img,
+  .mediatext .mediatext__textbox {
+    width: 100%;
+  }
+
+  .mediatext__textbox {
+    gap: 15px;
+  }
+
+  .mediatext__titel--mobil {
+    display: block;
+  }
+
+  .mediatext__titel--desktop {
+    display: none;
+  }
+
+  footer {
+    padding: 20px 10px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #footer__cta {
+    align-self: center;
+  }
+}
+
 /* Til små desktop skærme */
 @media screen and (min-width: 885px) and (max-width: 1023px) {
   * {
@@ -1083,6 +1232,7 @@ input::placeholder {
     gap: 20px;
     height: 700px;
   }
+
   .misogvis {
     flex-direction: row;
     padding: 50px 160px;
@@ -1090,6 +1240,7 @@ input::placeholder {
     justify-content: flex-start;
     align-items: flex-start;
   }
+
   .kampagnevideo {
     padding: 50px var(--sdesktop);
     gap: 25px;
@@ -1101,28 +1252,35 @@ input::placeholder {
     gap: 80px;
     align-items: center;
   }
+
   .mediatext img,
   .mediatext .mediatext__textbox {
     width: 50%;
   }
+
   .mediatext__textbox {
     gap: 25px;
     width: 100%;
   }
+
   .mediatext__titel--mobil {
     display: none;
   }
+
   .mediatext__titel--desktop {
     display: block;
   }
+
   .mediatext__vertical {
     padding: 50px var(--sdesktop);
   }
+
   .graabgmedia {
     flex-direction: row;
     padding: 50px var(--sdesktop);
     gap: 50px;
   }
+
   .graabgmedia__textbox {
     gap: 25px;
   }
@@ -1133,9 +1291,12 @@ input::placeholder {
     justify-content: space-between;
     align-items: flex-start;
   }
+
   #footer__cta {
     align-self: flex-start;
   }
+
+
   /* faq accordion starter her -----------------------------------------------------------------------------------------------------------*/
   #faq-efterheader {
     margin-top: 80px;
@@ -1181,11 +1342,13 @@ input::placeholder {
   .accordion-title {
     font-size: 20px;
   }
+
   /* faq accordion stopper her -----------------------------------------------------------------------------------------------------------*/
 
   .betaling {
     padding: 50px var(--sdesktop);
   }
+
   .betaling__knap--cta {
     max-width: 300px;
   }
@@ -1239,6 +1402,7 @@ input::placeholder {
     gap: 20px;
     height: 700px;
   }
+
   .misogvis {
     flex-direction: row;
     padding: 50px 160px;
@@ -1246,10 +1410,12 @@ input::placeholder {
     justify-content: flex-start;
     align-items: flex-start;
   }
+
   .kampagnevideo {
     padding: 50px var(--ldesktop);
     gap: 25px;
   }
+
   .kampagnevideo__graabg {
     padding: 50px var(--ldesktop);
     gap: 25px;
@@ -1261,28 +1427,35 @@ input::placeholder {
     gap: 80px;
     align-items: center;
   }
+
   .mediatext img,
   .mediatext .mediatext__textbox {
     width: 50%;
   }
+
   .mediatext__textbox {
     gap: 25px;
     width: 100%;
   }
+
   .mediatext__titel--mobil {
     display: none;
   }
+
   .mediatext__titel--desktop {
     display: block;
   }
+
   .mediatext__vertical {
     padding: 50px var(--ldesktop);
   }
+
   .graabgmedia {
     flex-direction: row;
     padding: 50px var(--ldesktop);
     gap: 50px;
   }
+
   .graabgmedia__textbox {
     gap: 25px;
   }
@@ -1293,6 +1466,7 @@ input::placeholder {
     justify-content: space-between;
     align-items: flex-start;
   }
+
   #footer__cta {
     align-self: flex-start;
   }
@@ -1310,6 +1484,7 @@ input::placeholder {
     max-width: 950px;
     min-height: 500px;
   }
+
   .faq-content {
     width: 50%;
     align-items: center;
@@ -1341,11 +1516,13 @@ input::placeholder {
   .accordion-title {
     font-size: 20px;
   }
+
   /* faq accordion stopper her -----------------------------------------------------------------------------------------------------------*/
 
   .betaling {
     padding: 50px var(--ldesktop);
   }
+
   .betaling__knap--cta {
     max-width: 300px;
   }
@@ -1395,6 +1572,7 @@ input::placeholder {
     gap: 20px;
     height: 700px;
   }
+
   .misogvis {
     flex-direction: row;
     padding: 50px 160px;
@@ -1402,6 +1580,7 @@ input::placeholder {
     justify-content: flex-start;
     align-items: flex-start;
   }
+
   .kampagnevideo {
     padding: 50px var(--ldesktop);
     gap: 25px;
@@ -1418,28 +1597,35 @@ input::placeholder {
     gap: 80px;
     align-items: center;
   }
+
   .mediatext img,
   .mediatext .mediatext__textbox {
     width: 50%;
   }
+
   .mediatext__textbox {
     gap: 25px;
     width: 100%;
   }
+
   .mediatext__titel--mobil {
     display: none;
   }
+
   .mediatext__titel--desktop {
     display: block;
   }
+
   .mediatext__vertical {
     padding: 50px var(--ldesktop);
   }
+
   .graabgmedia {
     flex-direction: row;
     padding: 50px var(--ldesktop);
     gap: 50px;
   }
+
   .graabgmedia__textbox {
     gap: 25px;
   }
@@ -1450,6 +1636,7 @@ input::placeholder {
     justify-content: space-between;
     align-items: flex-start;
   }
+
   #footer__cta {
     align-self: flex-start;
   }
@@ -1499,6 +1686,7 @@ input::placeholder {
   .accordion-title {
     font-size: 20px;
   }
+
   /* faq accordion stopper her -----------------------------------------------------------------------------------------------------------*/
 
   /*   frivilig event tilmelding-------------------------------------------------------------------------------------------------------*/
@@ -1509,6 +1697,7 @@ input::placeholder {
   .betaling {
     padding: 50px var(--ldesktop);
   }
+
   .betaling__knap--cta {
     max-width: 300px;
   }
