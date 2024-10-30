@@ -1106,7 +1106,6 @@ input::placeholder {
     padding: 100px 10%;
     gap: 15px;
     height: 60vh;
-    /* Mindre højde til mobil */
   }
 
   .hero__h1 {
