@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let position = 0; // Startposition
 
     function animateMarquee() {
-        position -= 1; // Flyt mod venstre med 1 px
+        position -= 1;
         if (position <= -marqueeWrapper.scrollWidth / 2) {
             position = 0; // Reset, når halvdelen er rullet
         }
